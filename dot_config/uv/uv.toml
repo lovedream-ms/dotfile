@@ -1,0 +1,8 @@
+[[index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true
+
+[[index]]
+name = "pytorch-cpu"  # 添加这一行
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

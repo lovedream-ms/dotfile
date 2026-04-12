@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "global_agent_settings": {
+    "maxOutputTokens": 4096
+  },
+  "agents": {
+    "hephaestus": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "oracle": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "librarian": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "explore": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "multimodal-looker": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "prometheus": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "metis": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "momus": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "atlas": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "sisyphus-junior": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 }
+  },
+  "categories": {
+    "visual-engineering": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "ultrabrain": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "deep": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "artistry": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "quick": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "unspecified-low": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "unspecified-high": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 },
+    "writing": { "model": "opencode-go/minimax-m2.7", "maxOutputTokens": 4096 }
+  }
+}

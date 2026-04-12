@@ -133,7 +133,6 @@ venv/
 *.gml
 *.geojson
 *.dem
-*.asc
 *.img
 *.ecw
 *.las

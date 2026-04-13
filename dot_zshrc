@@ -1,0 +1,25 @@
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_CUSTOM="$HOME/.oh-lovedream-zsh"
+zstyle ':omz:update' mode auto
+export ARCHFLAGS="-arch $(uname -m)"
+# export LANG=en_US.UTF-8
+
+ZSH_THEME="robbyrussell"                   # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+CASE_SENSITIVE="true"                      # 是否区分大小写补全
+HYPHEN_INSENSITIVE="true"		   # 忽略连字符 - 和下划线 _ 的区别
+# DISABLE_MAGIC_FUNCTIONS="true"             # 关闭“魔法粘贴”功能 Zsh 默认会在你粘贴 URL 时自动转义特殊字符（比如把 & 变成 \&）
+ENABLE_CORRECTION="true"                   # 开启命令拼写检查
+COMPLETION_WAITING_DOTS="true"             # 等待补全时显示红点
+# DISABLE_UNTRACKED_FILES_DIRTY="true"       # 不要去管那些还没被 Git 追踪（Untracked）的新文件，只检查已存在文件的修改情况。
+HIST_STAMPS="mm/dd/yyyy"		   # history显示时间
+
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+fi
+plugins=(git z zsh-nvm fzf docker)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source $ZSH/oh-my-zsh.sh
+source $ZSH_CUSTOM/aliases.zsh
+source $ZSH_CUSTOM/env.zsh
+

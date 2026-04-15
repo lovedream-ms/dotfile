@@ -45,13 +45,9 @@
 [diff]
   colorMoved = zebra
 
-[http "https://github.com/"]
-    proxy = socks5://127.0.0.1:7897
-[https "https://github.com/"]
-    proxy = socks5://127.0.0.1:7897
 [http]
-	proxy = http://127.0.0.1:7897
+	proxy = socks5://127.0.0.1:7897
 [https]
-	proxy = http://127.0.0.1:7897
+	proxy = socks5://127.0.0.1:7897
 [credential]
 	helper = store

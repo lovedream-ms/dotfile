@@ -44,6 +44,8 @@
 
 [diff]
   colorMoved = zebra
+[url "git@github.com:"]
+  insteadOf = https://github.com/
 
 [http]
 	proxy = socks5://127.0.0.1:7897
